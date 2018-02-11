@@ -1,7 +1,22 @@
 TODO LIST
-Copy lots of the p5 programs to pixijs programs
+
+Copy lots of the p5 programs to pixi js programs
 https://github.com/kittykatattack/learningPixi#introduction
+Examples
 Moving box
 Box that is getting bigger
 Acceleration/Gravity
 Simulating rain
+
+WA people 
+for you guys in WA check out the pixie js website
+
+Current Overall Goals
+Make basic MVP
+- space
+- controls
+- bullets
+- graphics
+- art
+
+
