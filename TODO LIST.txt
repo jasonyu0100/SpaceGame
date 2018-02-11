@@ -1,6 +1,6 @@
 TODO LIST
 Copy lots of the p5 programs to pixijs programs
-
+https://github.com/kittykatattack/learningPixi#introduction
 Moving box
 Box that is getting bigger
 Acceleration/Gravity
