@@ -1,0 +1,7 @@
+WEEK 1
+Orgnanised meetup at Bankstown Library on Sundays at 2pm
+Discussed game ideas and organised scheduling
+
+WEEK 2
+Got familiar with PIXI JS library
+Basic html canvas editing and geometry
