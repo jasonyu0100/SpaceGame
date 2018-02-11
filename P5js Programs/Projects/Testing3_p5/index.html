@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Ball</title>
+    <script src="../../libraries/p5.min.js"></script>
+    <script src="../../libraries/addons/p5.dom.min.js"></script>
+    <script src="../../libraries/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <style> body {padding: 0; margin: 0;} </style>
+  </head>
+  <body>
+  	<button onclick= decreaseSpeed()>Decrease Speed</button>
+  	<button onclick= increaseSpeed()>Increase Speed</button>
+  	<button onclick= stop()>Stop Speed</button>
+  	<button onclick= x_increase()>x increase</button>
+  	<button onclick= x_decrease()>x decrease</button>
+  	<button onclick= y_increase()>y increase</button>
+  	<button onclick= y_decrease()>y decrease</button>
+  	<script>
+  		function decreaseSpeed() {
+  			x_speed /= 2;
+  			y_speed /= 2;
+  		}
+  		function increaseSpeed() {
+  			x_speed *= 2;
+  			y_speed *= 2;
+  		}
+  		function stop() {
+  			x_speed = 0;
+  			y_speed = 0;
+  		}
+  		function x_increase() {
+  			x_speed += 1;
+  		}
+  		function x_decrease() {
+  			x_speed -= 1;
+  		}
+  		function y_increase() {
+  			y_speed += 1;
+  		}
+  		function y_decrease() {
+  			y_speed -= 1;
+  		}
+  	</script>
+  </body>
+</html>

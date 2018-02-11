@@ -1,0 +1,1 @@
+Bullet.prototype = Object.create(Particle.prototype);

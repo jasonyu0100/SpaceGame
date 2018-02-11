@@ -1,0 +1,9 @@
+To Do list
+
+
+TREKKKKK
+Reduce size of rectangle when reaching edge 
+Ideas for a certain given direction that block is moving:
+set the origin and vertex as key points
+get the top origin and top vertex of previous block
+
