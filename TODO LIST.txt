@@ -10,6 +10,7 @@ Simulating rain
 
 WA people 
 for you guys in WA check out the pixie js website
+If you guys wanna check out some canvas examples check out the folder p5 projects where you can find some of the stuff I've made in the past!!! :)
 
 Current Overall Goals
 Make basic MVP
