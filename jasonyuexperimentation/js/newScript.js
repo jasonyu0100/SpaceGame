@@ -24,9 +24,9 @@ let car;
 let mouseposition = app.renderer.plugins.interaction.mouse.global;
 //app.stage.mouseover()
 function setup() {
+	let mouseposition = app.renderer.plugins.interaction.mouse.global;
 	car = new Car(100,150,"images/car.png");
 	car.addToContainer(app.stage);
-
 	app.ticker.add(function(){
 		car.update(mouseposition);
 	});

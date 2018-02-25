@@ -3,31 +3,38 @@ class Car {
 		this.pixiSprite = new sprite(resources[location].texture);
 		this.pixiSprite.height = height;
 		this.pixiSprite.width = width;
-		this.pos = {x:0,y:0};
-		this.velocity = {x:1,y:1};
-		this.force = {x:0,y:0};
-
+		this.velocity = new Vector(1,0)
+		this.force = new Vector(0,0)
 	}
 
 	addToContainer(container) {
 		container.addChild(this.pixiSprite);
 	}
 
-	getDirection() {
 
+	applyForce(force) {
+		this.force.add(force)
 	}
 
-	updateSpritePos() {
-		this.pixiSprite.x = this.pos.y;
-		this.pixiSprite.y = this.pos.x;
+	getDirection(mousePosition) {
+		let mouse = new Vector(mousePosition.x,mousePosition.y)
+		let direction = new Vector(this.pixiSprite.x,this.pixiSprite.y)
+		mouse.subtract(direction)
+		return mouse
 	}
+
 
 	update(mousePosition) {
-		
-		this.pos.x += this.velocity.x
-		this.pos.y += this.velocity.y
-		this.updateSpritePos()
+		let direction = this.getDirection(mousePosition)
+		//direction.normalize()
+		//this.applyForce(direction)
+		//this.velocity.add(this.force)
+		//this.force.mult(0)
+		this.pixiSprite.x += this.velocity.x
+		this.pixiSprite.y += this.velocity.y
+		this.pixiSprite.rotation = this.velocity.angle();
 	}
+
 
 
 }
