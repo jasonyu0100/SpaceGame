@@ -1,6 +1,6 @@
 class Particle {
-    constructor(x,y) {
-        this.pos = new Vector(x,y) 
+    constructor(pos) {
+        this.pos = pos
         this.vel = new Vector(0,0)
         this.acc = new Vector(0,0)
     }
@@ -18,8 +18,8 @@ class Particle {
     }
 
     update() {
-        this.vel.add(this.acc)
-        this.pos.add(this.vel)
-        this.acc.mult(0)
+        this.vel.add(this.acc);
+        this.pos.add(this.vel);
+        this.acc.mult(0);
     }
 }

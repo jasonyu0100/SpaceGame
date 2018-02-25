@@ -26,8 +26,8 @@ function setup() {
 	mouseposition = app.renderer.plugins.interaction.mouse.global;
 	testCallState = testCall;
 	ParticleMoveState = ParticleMove;
-	let particle = new Car(0,0,"images/car.svg",100,50);
-	particle.vel.setVector(0.1,0.1);
+	let particle = new Car(new Vector(0,0),"images/car.svg",100,50);
+	particle.vel = new Vector(0.1,0.1);
 	particles.push(particle)
 	for (particle of particles) {
 		app.stage.addChild(particle.sprite);

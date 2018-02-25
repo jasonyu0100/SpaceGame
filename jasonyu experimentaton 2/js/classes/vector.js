@@ -34,13 +34,7 @@ class Vector {
         this.mult(mag)
     }
 
-    setVector(x,y) {
-        this.x = x
-        this.y = y
-    }
-
     copy() {
         return new Vector(this.x,this.y)
     }
-
 }

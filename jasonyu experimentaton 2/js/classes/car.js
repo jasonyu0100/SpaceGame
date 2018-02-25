@@ -1,6 +1,6 @@
 class Car extends Particle {
-    constructor(x,y,fileLocation,width,height) {
-        super(x,y);
+    constructor(pos,fileLocation,width,height) {
+        super(pos);
         this.sprite = new sprite(resources[fileLocation].texture)
         this.updateSpritePos();
         this.sprite.width = width;
