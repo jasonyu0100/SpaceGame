@@ -1,0 +1,15 @@
+Module types:
+- Weapons
+- Thrusters
+- Fuel Tank
+- Armor
+
+Module selection:
+- ship initially has a set number of 'blank' modules, like a fresh un-upgraded tank in diep.io
+- the first upgrade of each module decides the purpose of the module
+- 
+
+Armor:
+- Non-regenerative
+- replenished through scrap retrieval (asteroid/planet mining or from dead ships)
+
