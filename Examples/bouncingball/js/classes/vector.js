@@ -34,6 +34,14 @@ class Vector {
         this.mult(mag)
     }
 
+    getAngle() {
+        return this.angToRad(Math.atan2(this.y,this.x))
+    }
+
+    angToRad(angle) {
+        return angle * 180 / Math.PI
+    }
+
     copy() {
         return new Vector(this.x,this.y)
     }
