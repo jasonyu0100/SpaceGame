@@ -13,3 +13,8 @@ Armor:
 - Non-regenerative
 - replenished through scrap retrieval (asteroid/planet mining or from dead ships)
 
+Items:
+- Wormhole
+	- An item that is one use and creates a wormhole that travels somewhere random
+	players can use this to teleport out of tough situations and ambush opponents who	go through. Wormhole size is based on ship size and only ships around same size or 	smaller can go through
+
