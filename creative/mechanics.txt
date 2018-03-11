@@ -13,3 +13,16 @@ Armor:
 - Non-regenerative
 - replenished through scrap retrieval (asteroid/planet mining or from dead ships)
 
+Controls:
+-Right Click to accelerate
+-Spaceship moves to cursor
+-Spaceship gradually loses speed (ie braking)
+
+Bullets:
+-Damage based on velocity
+-Gravity of planets speeds up bullets and thus speeds
+-Gravity can slow bullets down
+
+Health:
+-
+

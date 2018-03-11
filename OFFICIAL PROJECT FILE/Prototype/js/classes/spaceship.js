@@ -4,7 +4,10 @@ class Spaceship extends Particle {
         let bullets = [];
         let sprite = new sprite(resources[spaceShipPic].texture);
         let friction = 0.98; //Change later if not working
-        let spaceShipAngle = null // Where the spaceship is angled towards
+        this.spaceShipAngle = null // Where the spaceship is angled towards
+
+        //Inventory
+        this.cash = 0
 
     }
 
