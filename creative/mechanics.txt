@@ -13,16 +13,39 @@ Armor:
 - Non-regenerative
 - replenished through scrap retrieval (asteroid/planet mining or from dead ships)
 
-Controls:
--Right Click to accelerate
--Spaceship moves to cursor
--Spaceship gradually loses speed (ie braking)
+Mechanic
+- Max amount of asteroids
+- Debris of ships are asteroids
 
-Bullets:
--Damage based on velocity
--Gravity of planets speeds up bullets and thus speeds
--Gravity can slow bullets down
+Shops
 
-Health:
--
+Items:
+- Wormhole
+	- An item that is one use and creates a wormhole that travels somewhere random
+	players can use this to teleport out of tough situations and ambush opponents who go through. Wormhole size is based on ship size and only ships around same size or 	smaller can go through
+- Explosice Mine
+	- Mine that explodes when spaceship touches it
+- Remove Gravity Item
+	- Anti gravity
+	- Invulnerable
+- blaster
+
+Weapons:
+- shotgun
+- machine gun
+- laser
+- rocket launcher
+- orbiting shield that can shoot
+- wave attack
+- reinheidt shield (temporary)
+- orbs
+- shield
+- homing missiles
+- mine spaceship (trap)
+- support class
+- mine asteroids (explode asteroid)
+- plasma gun (recharge from sun) chargeable
+- gravity manipulator
+
+
 
