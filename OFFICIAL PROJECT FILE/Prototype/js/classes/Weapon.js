@@ -1,4 +1,4 @@
-class Weapon(){
+class Weapon{
   constructor(bullet){ //bullet is a reference to the bullet class
     this.bullet = bullet;
   }
