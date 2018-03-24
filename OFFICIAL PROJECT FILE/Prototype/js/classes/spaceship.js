@@ -1,5 +1,5 @@
 class Spaceship extends Particle {
-    constructor(pos,spaceShipPic,bullletPic) {
+    constructor(pos,spaceShipPic,bulletPic) {
         super(pos);
         let bullets = [];
         let sprite = new sprite(resources[spaceShipPic].texture);
@@ -15,7 +15,7 @@ class Spaceship extends Particle {
         let direction = mousePosition.copy();
         direction.sub(this.pos);
         direction.setMag(4);
-        bullets.push(new Bullet(this.pos,direction,bullletPic))
+        bullets.push(new Bullet(this.pos,direction,bulletPic))
     }
 
     update(mousePosition) {

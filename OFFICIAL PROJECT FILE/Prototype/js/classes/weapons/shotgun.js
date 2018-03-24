@@ -1,12 +1,19 @@
 class Shotgun extends Weapon {
-    constructor() {
+    constructor(bulletcount, spread) {
         super(aa) //Weapon constructor
+        this.bulletcount = bulletcount;
+        this.spread = spread;
+        var bullangle;
     }
 
     shoot(){
         super.shoot()
+        
         //Get the vector of the spaceship facing rn currently xd
-        //Create a new bullet with the same vector but...
-        //Add an angle to the bullet random(-angle, angle)
+        for (i = 0; i < bulletcount; i++) {
+            bullangle.x = (spaceship.pos.x - spread)+(Math.random()*2*spread)
+            bullangle.y = (spaceship.pos.y - spread)+(Math.random()*2*spread)
+            new Bullet(spaceship.pos, bullangle, shotgunspritethingyreeeeee)
+        }
     }
 }
