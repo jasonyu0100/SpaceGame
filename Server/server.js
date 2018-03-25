@@ -3,6 +3,7 @@ const path = require('path')
 const app = express()
 const server = require('http').Server(app)
 const io = require('socket.io')(server);
+const pixi = require('pixi');
 
 
 app.get('/', (req, res) => {

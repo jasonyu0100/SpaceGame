@@ -3,3 +3,5 @@ class AngleVector extends Vector {
         super(Math.cos(mag),Math.sin(mag));
 	}
 }
+
+export {AngleVector};
