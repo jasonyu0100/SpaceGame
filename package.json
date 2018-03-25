@@ -17,7 +17,6 @@
   "homepage": "https://github.com/jasonyu0100/SpaceGame#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "pixi": "^0.3.1",
     "socket.io": "^2.0.4"
   },
   "devDependencies": {},

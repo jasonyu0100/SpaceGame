@@ -3,19 +3,17 @@ const path = require('path')
 const app = express()
 const server = require('http').Server(app)
 const io = require('socket.io')(server);
-const pixi = require('pixi');
-
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/templates/chat.html'))
 })
 
 app.get('/game', (req, res) => {
-    res.sendFile(path.join(__dirname + '/gamefolder/game.html'))
+    res.sendFile(path.join(__dirname + '/templates/game.html'))
 })
 
-app.use(express.static('public'))
-app.use('/static', express.static('public'))
+app.use(express.static('public'));
+app.use(express.static('gamefolder'));
 
 io.on('connection', function(socket) {
     console.log('a user connected');
