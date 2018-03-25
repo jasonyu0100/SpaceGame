@@ -7,7 +7,11 @@ const pixi = require('pixi');
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/index.html'))
+    res.sendFile(path.join(__dirname + '/templates/chat.html'))
+})
+
+app.get('/game', (req, res) => {
+    res.sendFile(path.join(__dirname + '/gamefolder/game.html'))
 })
 
 app.use(express.static('public'))
