@@ -1,7 +1,7 @@
 class Bullet extends Particle {
-    constructor(pos,velocity,bullletPic) {
+    constructor(pos,velocity,bulletPic) {
         super(pos);
-        this.sprite = new sprite(resources[bullletPic].texture)
+        this.sprite = new sprite(resources[bulletPic].texture)
         this.velocity = velocity;
     }
 
