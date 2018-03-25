@@ -36,8 +36,4 @@ class Spaceship extends Particle {
         // accelerate to spaceShipAngle
     }
 
-
-
-
-
 }
