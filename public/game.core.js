@@ -36,21 +36,19 @@ class Game {
         this.camera.position.set(app.screen.width/2, app.screen.height/2)
         this.app.stage.addChild(this.camera)
 
-        // this.app.stage.position.set(app.screen.width/2, app.screen.height/2)
-
         this.map = new Map(this, 100, 100)
         this.camera.addChild(this.map)
         this.player = this.createPlayer()
         this.bullets = []
 
-        // Adding test triangle
-        let coords = [new Vector(0,0),new Vector(-5,-10),new Vector(-5,10)]
-        let color = 0x00FFFF
-        let graphics = new Polygon(coords,color)
-        let position = new Vector(0,0)
-        this.testTriangle = new Entity(this,graphics,position)
-        this.map.addChild(graphics)
-        //End Triangle Test
+        // // Adding test triangle
+        // let coords = [new Vector(0,0),new Vector(-5,-10),new Vector(-5,10)]
+        // let color = 0x00FFFF
+        // let graphics = new Polygon(coords,color)
+        // let position = new Vector(0,0)
+        // this.testTriangle = new Entity(this,graphics,position,10,10)
+        // this.map.addChild(graphics)
+        // //End Triangle Test
 
         this.hudText = new PIXI.Text('Position:')
         this.hudText.style.fill = 'white'
@@ -74,19 +72,12 @@ class Game {
         this.hudText.text += '\nBearing: ' + Math.round(this.player.bearing)
         this.hudText.text += "\nDelta: " + delta 
         this.hudText.position.set(10, 10)
-
-        // if (this.app.ticker.FPS > 55) {
-        //     this.camera.pivot.copy(this.player.position)
-        // }
-
         if (this.keyboard[87]) {
             this.player.shoot(55, delta)
         }
-
         if (this.keyboard[32]) {
             this.player.boost(0.6, delta)
         }
-
         for (let [index, bullet] of this.bullets.entries()) {
             bullet.update()
             if (Math.abs(bullet.velocity.x) < 0.1 && Math.abs(bullet.velocity.y) < 0.1) {
@@ -95,15 +86,8 @@ class Game {
             }
             
         }
-
         this.player.update(delta)
-
         this.camera.pivot.copy(this.player.position)
-        // if (this.app.ticker.FPS < 55) {
-        //     this.camera.pivot.copy(this.player.position)
-        // }
-        
-
     }
 
     createPlayer() {
@@ -113,17 +97,8 @@ class Game {
         graphics.pivot.y = (-25)
         this.map.addChild(graphics)
         let position = new Vector(Math.random() * this.map.width,Math.random() * this.map.height)
-        let player = new Player(this, graphics,position)
+        let player = new Player(this, graphics,position, 10,10)
         return player
-    }
-
-    keyDown(e) {
-        
-    }
-
-    keyUp(e) {
-        
-
     }
 }
 
