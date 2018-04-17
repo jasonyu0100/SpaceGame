@@ -19,7 +19,7 @@ class GameServer {
 
     findGame(client) {
         for (let game in this.games) {
-            if (!game.started && game.players.length < 2) {
+            if (!game.started && game.players.length < 10) {
                 return game
             }
         }

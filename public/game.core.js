@@ -100,6 +100,15 @@ class Game {
         let player = new Player(this, graphics,position, 10,10)
         return player
     }
+
+    keyDown(e) {
+        
+    }
+
+    keyUp(e) {
+        
+
+    }
 }
 
 if (typeof module === "object" && module && typeof module.exports === "object") {
