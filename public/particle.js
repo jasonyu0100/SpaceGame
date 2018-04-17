@@ -1,4 +1,5 @@
 class Particle {
+
     constructor(position,reach,mass) {
         this.position = position
         this.velocity = new Vector(0,0)

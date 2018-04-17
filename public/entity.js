@@ -13,6 +13,7 @@ class Entity extends Particle {
         return mouse.sub(center).getAngle()
     }
 
+    // changes to this get reflected on-screen
     updateSprite() {
         this.sprite.x = this.position.x
         this.sprite.y = this.position.y
