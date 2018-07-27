@@ -5,7 +5,7 @@ class Shotgun extends Weapon {
         this.spread = spread;
         this.angle = angle;
     }
-}
+
     shoot(angle){
         super.shoot()
         
